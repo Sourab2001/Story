@@ -1,13 +1,135 @@
 body {
+  font-family: 'Arial', sans-serif;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-color: #111;
+  color: #fff;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #222;
+  padding: 10px 20px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.sign-out {
+  background-color: #56CCF2;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+main {
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+.status-buttons {
+  margin-bottom: 20px;
+}
+
+.status-btn {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.status-btn.new {
+  background-color: #2D9CDB;
+}
+
+.status-btn.in-progress {
+  background-color: #F2C94C;
+}
+
+.status-btn.completed {
+  background-color: #6FCF97;
+}
+
+.stories-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.story-card {
+  background-color: #222;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: left;
+}
+
+.story-card img {
+  width: 100%;
+  height: auto;
+}
+
+.story-info {
+  padding: 10px;
+}
+
+.story-info h2 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.status-label {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+.status-label.new {
+  background-color: #2D9CDB;
+}
+
+.status-label.in-progress {
+  background-color: #F2C94C;
+}
+
+.status-label.completed {
+  background-color: #6FCF97;
+}
+
+.pagination {
+  margin-top: 20px;
+}
+
+.pagination button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
 }
